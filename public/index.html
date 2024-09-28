@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Background styling */
+        body {
+            background: url('https://source.unsplash.com/1600x900/?nature,landscape') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Centering the content */
+        .welcome-container {
+            background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .welcome-container h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Button styling */
+        .welcome-container a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .welcome-container a:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>Thank you for visiting.</p>
+    <div class="welcome-container">
+        <h1>Welcome to Our Website!</h1>
+        <p>Your adventure starts here. Explore and discover new things with us.</p>
+        <a href="#">Get Started</a>
+    </div>
 </body>
 </html>
